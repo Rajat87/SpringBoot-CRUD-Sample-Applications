@@ -1,0 +1,5 @@
+127.0.0.1 - - [06/Jun/2022:00:16:18 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [06/Jun/2022:00:16:19 +0530] "GET /ServletsJSPUsingMVC/LoginPage.jsp HTTP/1.1" 200 371
+127.0.0.1 - - [06/Jun/2022:00:23:21 +0530] "GET / HTTP/1.1" 404 751
+0:0:0:0:0:0:0:1 - - [06/Jun/2022:00:23:23 +0530] "GET /ServletsJSPUsingMVC/LoginPage.jsp HTTP/1.1" 200 378
+0:0:0:0:0:0:0:1 - - [06/Jun/2022:00:23:31 +0530] "GET /ServletsJSPUsingMVC/Login?username=Rajat&password=rajat%40123 HTTP/1.1" 200 22

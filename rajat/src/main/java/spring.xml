@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<beans>
+
+<bean id="alien" class="app.rajat.Alien">
+<property name="age" value="10" />
+
+</bean>
+
+<bean id="alien1" class="app.rajat.Alien">
+<constructor-arg value="20"/>
+<constructor-arg ref="laptop1"/>
+
+</bean>
+
+<bean id="laptop1" class="app.rajat.Laptop"></bean>
+
+</beans>
+
+</beans>

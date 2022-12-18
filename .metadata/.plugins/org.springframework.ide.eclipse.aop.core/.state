@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aop-reference-model>
+<aop-project name="SpringBootRest"/>
+<aop-project name="MVC"/>
+<aop-project name="rajat"/>
+<aop-project name="SpringBootMVC"/>
+<aop-project name="TransactionDemoUsingSpringBoot"/>
+<aop-project name="springDemo"/>
+<aop-project name="SpringBootMVCProjectForPractice"/>
+<aop-project name="SpringBootRestAPIForPractice"/>
+<aop-project name="SpringCoreUsingXML"/>
+<aop-project name="ToDoListUsingSpringBootMVC"/>
+<aop-project name="AnotherCourseAPI"/>
+</aop-reference-model>

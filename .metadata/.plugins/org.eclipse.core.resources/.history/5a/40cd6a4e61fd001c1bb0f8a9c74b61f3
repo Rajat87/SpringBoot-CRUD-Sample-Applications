@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.thymeleaf.org"
+    xmlns:th="http://www.thymeleaf.org"
+    >
+<head>
+	<meta charset="UTF-8" />
+	<title>indexUsingThymeleaf</title>
+</head>
+<body>
+	<h1>Please Enter the details to add a To do item</h1>
+<form action="addToDo" method="post">
+	<label>Enter ID:</label>
+	<input name="topicId" type="text"><br></br>
+	<label>Enter Subject:</label>
+	<input name="subject" type="text"><br></br>
+	<label>Enter Description:</label>
+	<input name="description" type="text"><br></br>
+	<input type="submit">
+	</form>
+	
+	<h1>Please Enter the details to update a To do item</h1>
+	<form action="updateToDo" method="post">
+	<label>Enter ID:</label>
+	<input name="topicId" type="text"><br></br>
+	<label>Enter Subject:</label>
+	<input name="subject" type="text"><br></br>
+	<label>Enter Description:</label>
+	<input name="description" type="text"><br></br>
+	<input type="submit">
+	</form>
+	
+	<h1>Please Enter the details to delete a To do item</h1>
+	<form action="deleteToDo" method="post">
+	<label>Enter ID:</label>
+	<input name="topicId" type="text"><br></br>
+	<input type="submit">
+	</form>
+	
+	<h1 th:text="'Value Printed using'+${key}"></h1>
+	<h2 ></h2>
+	
+	
+</body>
+</html>

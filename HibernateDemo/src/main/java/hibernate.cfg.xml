@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC
+		"-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+		"http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.password">Rajat@123</property>
+        <!-- property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/NeonHibernate</property> -->
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/AnotherHibernateDemo</property> 
+        <property name="hibernate.connection.username">postgres</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hbm2ddl.auto">update</property>
+        <property name="show_sql">True</property>
+        <property name="hibernate.cache.use_second_level_cache">True</property>
+        <property name="hibernate.cache.region.factory_class">org.hibernate.cache.ehcache.internal.EhcacheRegionFactory</property>
+    </session-factory>
+    
+    <!-- When we are creating a hibernate configuration file in the maven project we get a dialog box which asks for certain details:
+    	These details are necessary for hibernate to interact with the DB
+    	1) Database Dialect -  
+    	hibernate.dialect
+		This property makes Hibernate generate the appropriate SQL for the chosen database.
+	
+		hibernate.connection.driver_class
+		The JDBC driver class.
+	
+		hibernate.connection.url
+		The JDBC URL to the database instance.
+	
+		hibernate.connection.username
+		The database username.
+	
+		hibernate.connection.password
+		The database password.
+		
+		hbm2ddl.auto
+		auto property in the hibernate.cfg.xml file to automatically create tables in your DB in order to store your entities in
+		them if the table doesn't already exist
+		
+		It can have the following values :
+		This property has four values mention below:
+
+1)create : - if the value is create than hibernate always create new table .. if table is present in database than it will delete it and recreate it… with that previous data in table is lost…
+
+2)update :- if value is update than hibernate first validates that table is present in database or not , if present use that table or if not create a new table.
+
+3) validate :- if value is validate than hibernate only verifies that whether table is present or not..if table does not exist than it throws exception.
+
+4)create-drop: if value is create-drop than hibernate creates a new table performs operation and delete that table immediately this value is used for testing of the hibernate code.
+    
+     -->
+    
+    
+</hibernate-configuration>
